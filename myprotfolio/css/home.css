@@ -1,0 +1,258 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2024/03/18/10/50/ai-generated-8640893_640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  /* Black transparent box */
+  .bodybox {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% transparency */
+   /* Optional: Rounded corners */
+  }
+
+  .colors{
+ 
+        position: fixed;
+        top: 20px; /* Adjust vertical position */
+        right: 20px; /* Adjust horizontal position */
+        z-index: 1000; /* Ensure it's above other content */
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+
+    
+  }
+.heading{
+   color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.navbar{
+   display: flex;
+   justify-self: start;
+   align-items: center;
+   list-style-type: none;
+   margin: 0px 25px;
+   font-size: 18px;
+   background-color: #333;
+   a{
+       color: #fff;
+       text-decoration: none;
+       margin-right: 10px;
+      
+   }  
+   
+
+   background-color: transparent;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(237 150 16);}
+.navbar button{
+background-color: transparent !important;
+border: 2px solid transparent;
+   margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+
+}
+
+a:hover{
+
+    color: white !important;
+    border-bottom: 4px solid #ffbd39;
+    animation: hoveranimation 2s ease infinite;
+}
+.heading h1{
+    color: rgba(255, 20, 196,0.5);
+}
+.para{
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #8f0ae7;
+}
+h2{
+    font-size: 60px;
+    color: #ffbd39;
+}
+.text-box{
+    float: right;
+    color: white;
+    margin: 3px 100px;
+    padding: 20px;
+}
+
+.cardbody{
+    width: 50vw;
+    height: 50vh;
+    
+}
+.card{
+    background-color:   rgba(138, 205, 207, 0.2); 
+
+}
+
+
+.coder{
+    display: inline-block;
+    margin: 2px 30px;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+.section2{
+    color: white;
+}
+.keyword { color: #c678dd;    letter-spacing: 2px;}
+        .variable { color: #e5c07b;   letter-spacing: 2px;}
+        .operator { color: #56b6c2;  letter-spacing: 2px; }
+        .string { color: #98c379;  letter-spacing: 2px; }
+        .method { color: #61afef;  letter-spacing: 2px; }
+        .number { color: #d19a66;  letter-spacing: 2px; }
+        .punctuation { color: #abb2bf;  letter-spacing: 2px; }
+      
+
+@keyframes hoveranimation {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-10px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+    
+}
+@media (max-width: 476px) {
+    .bodybox {
+        height: 100%; 
+    }
+
+    .text-box {
+        margin: 9px 18px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .text-box h2 {
+        font-size: 15px;
+    }
+
+    .cardbody {
+        width: 60vw;
+        height: auto; 
+        margin: 0 auto;
+    }
+
+    .card {
+        font-size: 8px; 
+    }
+
+    .navbar {
+        flex-wrap: wrap; 
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bodybox {
+        height: 100%; 
+    }
+
+    .text-box {
+        margin: 10px 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .text-box h2 {
+        font-size: 30px;
+    }
+
+    .cardbody {
+        width: 90vw;
+        height: auto; 
+        margin: 0 auto;
+    }
+
+    .card {
+        font-size: 12px; 
+    }
+
+    .navbar {
+        flex-wrap: wrap; 
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .text-box {
+        margin: 20px 50px;
+        padding: 15px;
+    }
+
+    .text-box h2 {
+        font-size: 40px;
+    }
+
+    .cardbody {
+        width: 70vw;
+        height: auto;
+    }
+
+    .navbar {
+        font-size: 16px;
+    }
+}
+
+/* Laptops and desktops (768px to 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .text-box {
+        margin: 20px 70px;
+    }
+
+    .text-box h2 {
+        font-size: 50px;
+    }
+
+    .cardbody {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .cardbody {
+        width: 50vw;
+        height: 50vh;
+    }
+}

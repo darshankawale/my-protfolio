@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2024/03/18/10/50/ai-generated-8640893_640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Black transparent box */
+  .bodybox {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% transparency */
+   /* Optional: Rounded corners */
+  }
+.heading{
+   color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.navbar{
+   display: flex;
+   justify-self: start;
+   align-items: center;
+   list-style-type: none;
+   margin: 0px 25px;
+   font-size: 18px;
+   background-color: #333;
+   a{
+       color: #fff;
+       text-decoration: none;
+       margin-right: 10px;
+      
+   }  
+   
+   top: 0; /* Stick to the top */
+   z-index: 1000; 
+   background-color: transparent;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(237 150 16);}
+.navbar button{
+background-color: transparent !important;
+border: 2px solid transparent;
+   margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+
+}
+
+a:hover{
+
+    color: white !important;
+    border-bottom: 4px solid #ffbd39;
+    animation: hoveranimation 2s ease infinite;
+}
+
+.heading h1{
+    color: rgba(255, 20, 196,0.5);
+}
+
+.text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.uploadbtn{
+    width: 8vw;
+    height: 5vh;
+ 
+    background-color: tan;
+    border: 2px solid transparent;
+}
+.uploadbtn:hover{
+   
+ 
+    background-color: rgb(160, 175, 21);
+    transform: scale(1.1);
+  
+}
+.label{
+    color: aqua;
+
+}
+
+.upbtn{
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.section2{
+    color: white;
+}
+.section2 table {
+    width: 100%;
+    margin: 5px 40px;
+}
+
+
+
+@keyframes hoveranimation {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-10px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+    
+}
+
+.align{
+    display: flex;
+    align-items: center;
+}
+.mbody{
+    background-color:   rgba(138, 205, 207, 0.2); 
+    margin-top: auto !important;
+}
+.colors{
+    color: rgb(206, 25, 182);
+    
+}
+.formcolors
+{
+    color: #ffffff;
+}
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    .heading {
+      font-size: 18px;
+      padding: 15px;
+    }
+  
+    .navbar button {
+      padding: 8px 15px;
+      font-size: 16px;
+    }
+  
+    .text {
+      font-size: 25px;
+    }
+  
+    .uploadbtn {
+      width: 12vw;
+      height: 6vh;
+    }
+  
+    .section2 table {
+      font-size: 14px;
+      margin: 5px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .heading {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .navbar button {
+      margin: 5px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  
+    .text {
+      font-size: 20px;
+    }
+  
+    .uploadbtn {
+      width: 20vw;
+      height: 7vh;
+    }
+  
+    .section2 table {
+      font-size: 12px;
+      margin: 5px 10px;
+    }
+  
+    .modal-dialog {
+      width: 90%; /* Shrink modal to fit smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .heading {
+      font-size: 14px;
+    }
+  
+    .navbar button {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .text {
+      font-size: 18px;
+    }
+  
+    .uploadbtn {
+      width: 25vw;
+      height: 8vh;
+    }
+  
+    .section2 table {
+      font-size: 10px;
+      margin: 5px 5px;
+    }
+  
+    .modal-dialog {
+      width: 95%;
+    }
+  }
+  

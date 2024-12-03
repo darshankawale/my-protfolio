@@ -1,0 +1,109 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2024/03/18/10/50/ai-generated-8640893_640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodybox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px 25px;
+    font-size: 18px;
+    background-color: #333;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(237, 150, 16);
+}
+
+.navbar button {
+    background-color: transparent !important;
+    border: 2px solid transparent;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: white !important;
+    border-bottom: 4px solid #ffbd39;
+    animation: hoveranimation 2s ease infinite;
+}
+
+.text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardbody {
+    width: 50vw;
+    height: 50vh;
+    margin: 5px 30px;
+}
+
+.card {
+    background-color: rgba(2, 253, 149, 0.7);
+    opacity: 0.7;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.traancol {
+    background-color: rgba(2, 253, 149, 0.7) !important;
+}
+
+form label {
+    color: rgb(252, 3, 111);
+}
+
+form input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(252, 3, 111);
+    color: #0bfcf0;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}

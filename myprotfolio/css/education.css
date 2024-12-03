@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2024/03/18/10/50/ai-generated-8640893_640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Black transparent box */
+  .bodybox {
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% transparency */
+   /* Optional: Rounded corners */
+  }
+.heading{
+   color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.navbar{
+   display: flex;
+   justify-self: start;
+   align-items: center;
+   list-style-type: none;
+   margin: 0px 25px;
+   font-size: 18px;
+   background-color: #333;
+   a{
+       color: #fff;
+       text-decoration: none;
+       margin-right: 10px;
+      
+   }  
+   
+   top: 0; /* Stick to the top */
+   z-index: 1000; 
+   background-color: transparent;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(237 150 16);}
+.navbar button{
+background-color: transparent !important;
+border: 2px solid transparent;
+   margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+
+}
+
+a:hover{
+
+    color: white !important;
+    border-bottom: 4px solid #ffbd39;
+    animation: hoveranimation 2s ease infinite;
+}
+
+.heading h1{
+    color: rgba(255, 20, 196,0.5);
+}
+
+/* education main body css start here */
+.text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 80px;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0px 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.card{
+    width: 40vw;
+    height: 20vh;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5 , repeat) ;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(11, 238, 227, 0.2);
+}
+
+.card:hover::before {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 110, 196, 0.6), 0 0 15px rgba(120, 115, 245, 0.6);
+}
+
+.edu-image{
+    border-radius: 50%;
+}
+.edu-image :hover{
+    border-radius: 50%;
+    box-shadow:   15px 15px rgba(255, 110, 196, 0.6), 0 0 15px rgba(120, 115, 245, 0.6);
+
+}
+
+@keyframes hoveranimation {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-10px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+    
+}
+/* Media Queries for Responsiveness */
+
+/* For tablets and medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: column; /* Stack cards and image vertically */
+        align-items: center;   /* Center-align the items */
+    }
+
+    .cards {
+        grid-template-columns: 1fr; 
+        width: 80%;                 
+        margin: 0 auto;             
+    }
+
+    .card {
+        width: 100%; /* Cards take full width of their container */
+    }
+
+    .edu-image {
+        order: 2;           /* Move image below the cards */
+        margin-top: 20px;   /* Add spacing above the image */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 24px; 
+    }
+
+    .card {
+        height: auto;     
+        padding: 10px;    
+    }
+
+    .edu-image {
+        margin-top: 10px; 
+    }
+}
