@@ -8,6 +8,7 @@ folder struture
 3.css
 4.js
 
-it is the responsive that suitable all screen  sizes
-note: use the password 1to 8 for blog to see the other functinalities 
+it is the responsive that suitable all screen  sizes.
+note: use the password 1to 8 for blog to see the other functinalities .
+note: In this protfolio a test.html and test.js is for testing different functinality
 
